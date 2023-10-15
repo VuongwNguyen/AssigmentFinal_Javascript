@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <title>PS33232_NguyenQuocVuong_AsignmentFinal</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="home.html">Trang chủ</a></li>
+            <li class="dropdown">
+                <a href="#">Mặt hàng</a>
+                <div class="dropdown-content">
+                    <a href="#">Áo</a>
+                    <a href="#">Quần</a>
+                    <a href="#">Phụ kiện</a>
+                    <a href="#">Giày</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Loại hàng</a>
+                <div class="dropdown-content">
+                    <a href="#">Nam</a>
+                    <a href="#">Nữ</a>
+                    <a href="#">Trẻ em</a>
+                    <a href="#">Phong Cách Nước Ngoài</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Hệ Thống Cửa Hàng</a>
+                <div class="dropdown-content">
+                    <a href="#">TP. Hồ Chí Minh</a>
+                    <a href="#">TP. Hà Nội</a>
+                    <a href="#">TP. Cần Thơ</a>
+                    <a href="#">TP. Đà Nẵng</a>
+
+                </div>
+            </li>
+            <ul class="ic-user">
+                <li>
+                    <a href="#" id="theCart" onmouseover="theCart()" onclick="goToPurchase()">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <div class="cart-dropdown">
+                        <div id="cartList">
+                            <!-- dữ lệU  load ở đây -->
+                        </div>
+                        <p id="totalPrice">Tạm Tính: 0VNĐ</p>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-user dropdown"></i></a>
+                    <div class="dropdown-content">
+                        <a href="" onclick="logout()">Đăng Xuất</a>
+                    </div>
+                </li>
+            </ul>
+        </ul>
+    </nav>
+    <!-- Slider -->
+    <div class="sliders">
+        <img src="asset/images/73899e79c2ce1b7c766e18610e30955e.jpg" id="image" onclick="imageBanner()">
+    </div>
+    <main>
+        <div class="clock-container">
+
+            <div class="divider-color-container">
+                <div class="divider-color">Giày</div>
+                <div class="divider-color">Dép</div>
+                <div class="divider-color">Váy</div>
+                <div class="divider-color">Đầm</div>
+                <div class="divider-color">Quần Jeans</div>
+                <div class="divider-color">Áo Phông</div>
+
+            </div>
+            <div class="clock-content">
+                <div class="clock-title">Flash Sale !!</div>
+                <div class="clock">
+                    <div id="days">1</div>
+                    <div> Ngày</div>
+                    <div id="hours"></div>
+                    <div> Giờ</div>
+                    <div id="minutes"></div>
+                    <div> Phút</div>
+                    <div id="seconds"></div>
+                    <div> Giây</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="product-grid">
+            <!-- dữ lệU  load ở đây -->
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="asset/images/qvuong_removebg.png" alt="Your Logo" class="logo">
+                <address>
+                    74m/1HT Tân Chánh Hiệp<br>
+                    TP.Hồ Chí Minh, Quận 12
+                </address>
+                <p>Email: vuongnqps33232@fpt.edu.vn<br> Phone: +84 975 091 ***</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.facebook.com/nguyevuongw/" class="icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="icon"><i class="fab fa-android"></i></a>
+                <a href="https://github.com/VuongwNguyen" class="icon"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <p class="footer-text">&copy; 2023 Presented By QVuongw</p>
+    </footer>
+
+
+
+
+    <script src="asset/javascript/attribute.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+
+
+</html>

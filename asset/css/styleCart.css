@@ -1,0 +1,134 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.table-container {
+    width: 70%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+table button:hover {
+    background-color: #ff1100;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+table button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
+    cursor: pointer;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+th {
+    max-height: 100px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+input[type="number"] {
+    width: 40px;
+}
+
+.checkout-container {
+    width: 30%;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+.cart-title {
+    font-size: 50px;
+    margin: 20px;
+    background-color: #36f475;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+}
+
+
+/* Custom CSS for the content within .checkout-container */
+
+.checkout-content {
+    font-weight: bold;
+}
+
+.product-name {
+    margin: 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.product-name image {
+    max-width: 100px;
+    height: 100px;
+    object-fit: fill;
+}
+
+.product-name p {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px;
+}
+
+#totalTong {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #ff1100;
+    font-weight: 900;
+}
+
+.btn-checkout {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #36f475;
+    color: white;
+    border: none;
+    border-radius: 100% 0% 100% 0% / 99% 0% 100% 1%;
+    cursor: pointer;
+}
+
+.btn-checkout:hover {
+    background-color: #04a527;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}

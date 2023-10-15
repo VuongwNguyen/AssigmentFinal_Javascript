@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <link rel="stylesheet" href="asset/css/styleCart.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="home.html">Trang chủ</a></li>
+            <li class="dropdown">
+                <a href="#">Mặt hàng</a>
+                <div class="dropdown-content">
+                    <a href="#">Áo</a>
+                    <a href="#">Quần</a>
+                    <a href="#">Phụ kiện</a>
+                    <a href="#">Giày</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Loại hàng</a>
+                <div class="dropdown-content">
+                    <a href="#">Nam</a>
+                    <a href="#">Nữ</a>
+                    <a href="#">Trẻ em</a>
+                    <a href="#">Phong Cách Nước Ngoài</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Hệ Thống Cửa Hàng</a>
+                <div class="dropdown-content">
+                    <a href="#">TP. Hồ Chí Minh</a>
+                    <a href="#">TP. Hà Nội</a>
+                    <a href="#">TP. Cần Thơ</a>
+                    <a href="#">TP. Đà Nẵng</a>
+
+                </div>
+            </li>
+            <ul class="ic-user">
+                <!-- <li>
+                    <a href="#" id="theCart" onmouseover="theCart()" onclick="goToPurchase()">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <div class="cart-dropdown">
+                        <div id="cartList">
+                        </div>
+
+                        <p id="totalPrice">Tạm Tính: 0VNĐ</p>
+                    </div>
+                </li> -->
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-user dropdown"></i></a>
+                    <div class="dropdown-content">
+                        <a href="" onclick="logout()">Đăng Xuất<i class="fa-solid fa-right-from-bracket"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </ul>
+    </nav>
+    <main>
+        <div class="cart-title">Giỏ Hàng Của Bạn</div>
+        <div class="container">
+            <div class="table-container">
+                <table id="productTable">
+                    <thead>
+                        <tr>
+                            <th>Sản Phẩm</th>
+                            <th>Giá Sản Phẩm</th>
+                            <th>Số Lượng</th>
+                            <th>Tổng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <!-- Table rows will be added here dynamically -->
+                    </tbody>
+
+                </table>
+                <div id="flag-product">Không Có Sản Phẩm Nào Ở Đây !</div>
+            </div>
+
+            <div class="checkout-container">
+                <div class="checkout-content">
+                    <!-- You can add checkout-related information or other elements here -->
+                    <h2>Checkout</h2>
+                    <p id="totalTamTinh">Tạm Tính: 0VNĐ</p>
+                    <p id="totalTax">Phí Dịch Vụ: 0VNĐ</p>
+                    <div style="width: 100%; height: 0.5px; background-color: black;"></div>
+                    <p id="totalTong">Tổng Tiền: 0VNĐ</p>
+                    <button class="btn-checkout" onclick="checkOut()">Thanh Toán</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="asset/javascript/attributeCart.js"></script>
+    <script src="asset/javascript/attribute.js"></script>
+</body>
+
+</html>
